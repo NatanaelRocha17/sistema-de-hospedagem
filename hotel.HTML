@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTEL BRITO - Mortugaba</title>
+    <link rel="stylesheet" href="hotel.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="inicio">
+
+        <h1>Hotel e Restaurante Brito</h1>
+    </div>
+    <section id="conteudo">
+        <section id="reserva">
+            <h2>Reserva Quarto</h2>
+            <p>Nome do cliente: <input type="text" name="nome" id="nome"></p>
+            <p>Data da entrata: <input type="date" name="" id="entre">
+                Saída: <input type="date" name="saida" id="saida"></p>
+            <p>CPF: <input type="number" name="cpf" id="cpf"></p>
+            <p>Data de nascimento: <input type="date" name="nasc" id="nasc"></p>
+            <select name="quart" id="quart">
+                <option value="0"> Quarto 1</option>
+                <option value="1"> Quarto 2</option>
+                <option value="2"> Quarto 3</option>
+                <option value="3"> Quarto 4</option>
+                <option value="4"> Quarto 5</option>
+                <option value="5"> Quarto 6</option>
+                <option value="6"> Quarto 7</option>
+                <option value="7"> Quarto 8</option>
+                <option value="8"> Quarto 9</option>
+                <option value="9"> Quarto 10</option>
+            </select>
+            <br>
+            <br>
+            <input type="radio" name="pago" id="pagou">
+            <label for="pago"> Pagou</label>
+            <input type="radio" name="pago" id="npago">
+            <label for="pago"> Não Pago</label>
+            <br>
+            <input type="button" value="RESERVAR QUARTO" onclick="reservar()">
+
+            <div id="res">
+
+            </div>
+
+        </section>
+        <section id="reservados">
+            <h2>Reservados</h2>
+            <p><input type="button" value="QUARTOS DISPONIVEIS" onclick="disponiveis()"></p>
+            <div id="res3">
+
+            </div>
+            <h3>Hospedes</h3>
+            Localize o hospede pelo nome
+            <input type="text" name="localnome" id="localnome"> <input type="button" value="LOCALIZAR"
+                onclick="localizar()">
+            <div id="res2">
+
+
+
+            </div>
+        </section>
+        <section id="gastos">
+            <p> <b>ADICIONAR GASTOS DO CLIENTE</b></p>
+
+            Nome do hospede: <input type="text" name="" id="nomehospede"> <br>
+            Nome do produto: <input type="text" name="" id="nomegast"> <br>
+
+            Valor: <input type="number" name="" id="valorgast"> <br>
+            <input type="radio" name="pague" id="pagou2">
+            <label for="pago"> Pagou</label>
+            <input type="radio" name="pague" id="npago2">
+            <label for="pago"> Não Pago</label>
+            <input type="button" value="ADICIONAR" onclick="gastos()">
+            <div id="res4">
+
+            </div>
+
+        </section>
+        <section id="nota">
+            <p class="letra"> <b>NOTA FISCAL</b></p>
+            <br>
+
+            <input type="text" name="" id="nomenota">
+
+            <input type="button" value="VER NOTA" onclick="vernota()">
+
+
+            <br>
+            <div id="res5">
+
+            </div>
+            <div id="res6">
+
+            </div>
+
+        </section>
+        <section id="cancela">
+            <p class="letra"> <b> CANCELAR RESERVA DOS HOSPEDES </b> </p>
+            Nº do quarto: <input type="number" name="" id="cancel">
+            <input type="button" value="CANCELAR" onclick="cancelar()">
+            <div id="res7">
+
+            </div>
+
+        </section>
+    </section>
+    <div id="barra">
+
+
+    </div>
+</body>
+<script src="hotel.js"></script>
+
+</html>
